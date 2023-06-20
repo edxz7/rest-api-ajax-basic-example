@@ -1,0 +1,17 @@
+
+
+
+// JSON
+{
+    "monto": 1000,
+    "description": "reparacion de pc"
+}
+
+//XML
+
+<MONTO>
+    1000
+</MONTO>
+<DESCRIPTION>
+   reparacion de pc
+</DESCRIPTION>
