@@ -2,7 +2,9 @@ const Country = require('../models/Country.model');
 
 const getAllCountries = (req, res) => {
   console.log("get all countries")
-  Country.find()
+  Country.find()          // JSON es uno de los formatos permitidos para
+                          // enviar datos con el protocolo http
+                         //  XML (legacy) , protobuf 
   .then(countries => res.status(200).json({ countries }))
   .catch(err => console.error(err));
 }

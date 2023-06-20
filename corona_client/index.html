@@ -8,10 +8,71 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
+  <div class="container">
+    <h1>Coronavirus Cases</h1>
 
+    <div class="row">
+
+      <div class="col">
+        <h4>Create new country record</h4>
+        <form id="create-form">
+          <div class="form-group">
+            <input type="text" name="name" id="namecreate" placeholder="Country Nmae">
+          </div>
+          <div class="form-group">
+            <input type="text" name="confirmed" id="confirmedcreate" placeholder="Confirmed Cases">
+          </div>
+          <div class="form-group">
+            <input type="text" name="recovered" id="recoveredcreate" placeholder="Recovered Cases">
+          </div>
+          <div class="form-group">
+            <input type="text" name="deaths" id="deathscreate" placeholder="Deaths">
+          </div>
+          <button type="submit" class="btn btn-primary" >Submit</button>
+        </form>
+        <hr>
+        <h4>Update country records</h4>
+        <div class="form-group">
+            <input type="text" name="id" id="countryId" placeholder="Country Id">
+            <button id="search-country" class="btn btn-info">Search Country by Id</button>
+        </div>
+        <form id="update-form">
+          <div class="form-group">
+            <input type="text" name="name" id="nameupdate" placeholder="Country Nmae">
+          </div>
+          <div class="form-group">
+            <input type="text" name="confirmed" id="confirmedupdate" placeholder="Confirmed Cases">
+          </div>
+          <div class="form-group">
+            <input type="text" name="recovered" id="recoveredupdate" placeholder="Recovered Cases">
+          </div>
+          <div class="form-group">
+            <input type="text" name="deaths" id="deathsupdate" placeholder="Deaths">
+          </div>
+
+          <div class="form-group">
+            <input type="submit" value="update country" class="btn btn-success">
+          </div>
+
+        </form>
+      </div>
+
+      <div class="col">
+        <h4>Countries info</h4>
+        <section id="countries-list">
+          <!-- <article>
+             <a>mexico</a>  <span>id</span>  <span>casos confirmados</span>  <span class="btn btn-danger mx-xl delete">X</span> 
+             <a>brasil</a>  <span>id</span>  <span>casos confirmados</span>  <span class="btn btn-danger mx-xl delete">X</span> 
+          </article> -->
+        </section>
+      </div>
+
+    </div>
+
+  </div>
 
   <!-- axios -->
-
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <!-- client javascript -->
   <script src="index.js"></script>
 </body>
